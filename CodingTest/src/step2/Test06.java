@@ -10,6 +10,14 @@ public class Test06 {
 		int m = sc.nextInt();
 		int add = sc.nextInt();
 		
-		System.out.println(h + " " + m);
+		if(h == 0) {
+			h = 24;
+			if(m >= 60) {
+				h += 1;
+				m = m + (m-60);
+			} else {
+				
+			}
+		}
 	}
 }
