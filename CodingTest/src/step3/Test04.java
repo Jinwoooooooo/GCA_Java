@@ -8,13 +8,18 @@ public class Test04 {
 		
 		int total = sc.nextInt();
 		int kind = sc.nextInt();
-		int price = sc.nextInt();
-		int item = sc.nextInt();
+		int price;
+		int item;
 		
-		if(price * item == total) {
-			System.out.println("Yes");
-		} else {
-			System.out.println("No");
+		for(int i=0; i<kind; i++) {
+			price = sc.nextInt();
+			item = sc.nextInt();
 		}
+
+//		if(price * item == total) {
+//			System.out.println("Yes");
+//		} else {
+//			System.out.println("No");
+//		}
 	}
 }

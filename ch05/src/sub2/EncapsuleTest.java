@@ -74,5 +74,40 @@ public class EncapsuleTest {
 		//우리은행 -> 유리은행 상호변경
 		wri.setBank("유리은행");
 		wri.show();
+		
+		
+		Book book = new Book("노르웨이 숲", "무라카미 하루키", "9788937434488", 5);
+		
+		boolean isOk = book.borrowBook();
+		if(isOk) {
+			System.out.println(book.getTitle() + " 도서 대출 성공");
+		} else {			
+			System.out.println(book.getTitle() + " 도서 대출 실패");
+		}
+		book.show();
+		
+		
+		Book book1 = new Book("이것이 자바다", "신용권", "10002", 0);
+		book1.show();
+		if(book1.borrowBook()) {
+			System.out.println(book1.getTitle() + " 도서 대출 성공");
+		} else {
+			System.out.println(book1.getTitle() + " 도서 대출 실패");			
+		}
+		
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		System.out.println();
+		
+		Movie movie1 = new Movie("오펜하이머", "크리스토퍼 놀란", 8.53, 100);
+		movie1.showDetails();
+
+		if(movie1.reserveSeat()) {
+			System.out.println(movie1.getTitle() + " 영화 예매 완료");
+		} else {
+			System.out.println(movie1.getTitle() + " 영화 예매 실패");			
+		}
+		movie1.showDetails();
 	}
 }
