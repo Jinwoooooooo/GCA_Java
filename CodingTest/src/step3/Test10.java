@@ -7,5 +7,12 @@ public class Test10 {
 		Scanner sc = new Scanner(System.in);
 		
 		int time = sc.nextInt();
+		
+		for(int i=0; i<time; i++) {
+			for(int j=0; j<=i; j++) {				
+				System.out.print("*");
+			}
+			System.out.println();
+		}
 	}
 }
