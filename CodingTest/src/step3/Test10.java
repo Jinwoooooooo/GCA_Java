@@ -9,7 +9,10 @@ public class Test10 {
 		int time = sc.nextInt();
 		
 		for(int i=0; i<time; i++) {
-			for(int j=0; j<=i; j++) {				
+			for(int j=time-1; j>i; j--) {				
+				System.out.print(" ");
+			}
+			for(int k=0; k<time; k++) {				
 				System.out.print("*");
 			}
 			System.out.println();
