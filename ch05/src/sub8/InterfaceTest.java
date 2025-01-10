@@ -31,6 +31,8 @@ public class InterfaceTest {
 		socket.switchOff();
 		
 		//인터페이스 예제3 - 다중 상속 효과
+		SmartTV stv = new SmartTV();
+		stv.process();
 		
 	}
 }
