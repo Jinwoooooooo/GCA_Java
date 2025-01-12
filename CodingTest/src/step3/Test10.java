@@ -12,7 +12,7 @@ public class Test10 {
 			for(int j=time-1; j>i; j--) {				
 				System.out.print(" ");
 			}
-			for(int k=0; k<time; k++) {				
+			for(int k=0; k<=i; k++) {				
 				System.out.print("*");
 			}
 			System.out.println();
