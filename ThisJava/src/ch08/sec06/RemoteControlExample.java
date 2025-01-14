@@ -1,4 +1,4 @@
-package ch08.sec05;
+package ch08.sec06;
 
 public class RemoteControlExample {
 	public static void main(String[] args) {
@@ -25,5 +25,10 @@ public class RemoteControlExample {
 		//디폴트 메소드 호출
 		rc.setMute(true);
 		rc.setMute(false);
+		
+		System.out.println();
+		
+		//정적 메소드 호출
+		RemoteControl.changeBattery();
 	}
 }

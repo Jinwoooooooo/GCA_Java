@@ -1,4 +1,4 @@
-package ch08.sec05;
+package ch08.sec06;
 
 public class Audio implements RemoteControl {
 
