@@ -17,9 +17,8 @@ public class Test02 {
 		}
 		for(int j=0; j<a.length; j++) {
 			if(a[j] < x) {
-				
+				System.out.println(a[j]);
 			}
-			System.out.println(a[j]);
 		}
 	}
 }
